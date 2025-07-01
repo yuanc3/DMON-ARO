@@ -17,7 +17,7 @@ def getNewDismat(dismat, k, mean: bool = False):
     dismat[dismat > val[:, -1].unsqueeze(1)] = 1
     return dismat
 
-def aro(qf: torch.tensor, gf: torch.tensor, k1, k2):
+def aro(qf: torch.tensor, gf: torch.tensor, k2):
     qf = qf.to('cuda')
     gf = gf.to('cuda')
  
@@ -27,7 +27,7 @@ def aro(qf: torch.tensor, gf: torch.tensor, k1, k2):
     dist_qg = torch.nn.functional.normalize(dist_qg)
     dist_gg = torch.nn.functional.normalize(dist_gg)
 
-    qg2 = torch.concat([getNewDismat(dist_qg.clone(), k1, largest=False)], dim=1)
+    qg2 = torch.concat([getNewDismat(dist_qg.clone(), k2, largest=False)], dim=1)
     gg2 = torch.concat([getNewDismat(dist_gg.clone(), k2, largest=False)], dim=1)
     qg2 = torch.nn.functional.normalize(qg2)
     gg2 = torch.nn.functional.normalize(gg2)
