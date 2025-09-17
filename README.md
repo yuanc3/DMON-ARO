@@ -1,7 +1,7 @@
 # DMON-ARO: Neighbor-Based Feature and Index Enhancement for Person Re-Identification
 
 <div align='center'>
-    <a href='[https://arxiv.org/abs/2503.00938](https://openaccess.thecvf.com/content/CVPR2025W/ABAW/papers/Yuan_Neighbor-Based_Feature_and_Index_Enhancement_for_Person_Re-Identification_CVPRW_2025_paper.pdf)'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://arxiv.org/abs/2504.11798'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
 
 A ***Plug-and-Play*** method designed Not only for ReID task, but all retrival tasks.
